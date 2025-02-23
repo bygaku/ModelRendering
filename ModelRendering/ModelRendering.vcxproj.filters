@@ -10,6 +10,5 @@
     <ClInclude Include="LoopCondition.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Camera.h" />
-    <ClInclude Include="Map.h" />
   </ItemGroup>
 </Project>

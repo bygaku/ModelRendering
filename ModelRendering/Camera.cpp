@@ -9,7 +9,7 @@
 Camera::Camera()
 {
 	//‰œs0.1`1000‚Ü‚Å‚ğƒJƒƒ‰‚Ì•`‰æ”ÍˆÍ‚Æ‚·‚é
-	SetCameraNearFar(0.1f, 1000.0f);
+	SetCameraNearFar(1.0f, 200.0f);
 
 	m_pos = VGet(0, 0, 0);
 }
