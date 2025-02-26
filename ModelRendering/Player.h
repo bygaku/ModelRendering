@@ -5,11 +5,11 @@
 class Player 
 {
 public:
-	Player();				// コンストラクタ
-	~Player();				// デストラクタ
+	Player();
+	~Player();
 
-	void Update();			// 更新
-	void Draw();			// 描画
+	void Update();
+	void Draw();
 
 	// モデルハンドルの取得.
 	int GetModelHandle() const { return m_modelHandle; }
