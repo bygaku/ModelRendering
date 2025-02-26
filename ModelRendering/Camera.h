@@ -8,7 +8,7 @@ class Camera
 {
 public:
 	Camera();
-	~Camera();
+	~Camera() = default;
 	void Update(const Player& player);
 
 	const VECTOR& GetPos() const { return m_pos; }

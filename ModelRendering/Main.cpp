@@ -28,6 +28,7 @@ int WINAPI WinMain(_In_		HINSTANCE hInstance,
 
 	Player* player = new Player();
 	auto* camera = new Camera();
+
 	while (isLoop())
 	{
 		player->Update();
@@ -38,7 +39,7 @@ int WINAPI WinMain(_In_		HINSTANCE hInstance,
 
 #ifdef _DEBUG
 		// XYZŽ²
-		float lineSize = 300.0f;
+		float lineSize = 100.0f;
 		DrawLine3D(VGet(-lineSize, 0, 0), VGet(lineSize, 0, 0), GetColor(255, 0, 0));
 		DrawLine3D(VGet(0, -lineSize, 0), VGet(0, lineSize, 0), GetColor(0, 255, 0));
 		DrawLine3D(VGet(0, 0, -lineSize), VGet(0, 0, lineSize), GetColor(0, 0, 255));

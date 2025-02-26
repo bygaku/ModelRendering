@@ -22,7 +22,7 @@ private:
 	VECTOR	m_pos;				/// @brief ポジション
 	VECTOR	m_velocity;			/// @brief 移動力
 	VECTOR	m_dir;				/// @brief 回転方向
-	VECTOR  m_rota;				
+	VECTOR  m_rota;
 	static const float Speed;	/// @brief 速度
 	static const float Scale;	/// @brief スケール
 };

@@ -16,10 +16,10 @@ Player::Player()
 {
 	m_modelHandle = MV1LoadModel("data/models/Slime.mv1");
 
-	m_pos		  = VGet(5, 0, 0);
+	m_pos		  = VGet(0.0f, 0.5f, 0);
 	m_velocity	  = VGet(0, 0, 0);
 	m_dir		  = VGet(0, 0, 0);
-	m_rota		  = VGet(0, -45.0f, 0);
+	m_rota		  = VGet(0, DX_PI_F	/ -2.0f, 0);
 }
 
 Player::~Player()
@@ -29,10 +29,8 @@ Player::~Player()
 
 void Player::Update()
 {
-	// ÉLÅ[ì¸óÕéÊìæ
 	int Key = GetJoypadInputState(DX_INPUT_KEY_PAD1);
 
-	// íPèÉÇ…ï˚å¸ì]ä∑
 	m_dir = VGet(0, 0, 0);
 	if (Key & PAD_INPUT_UP)
 	{
@@ -68,7 +66,6 @@ void Player::Update()
 	{
 		m_dir = VNorm(m_velocity);
 	}
-	//printfDx("%f %f %f\n", dir.x, dir.y, dir.z);
 
 	MV1SetScale		 (m_modelHandle, VGet(Scale, Scale, Scale));
 	MV1SetRotationXYZ(m_modelHandle, VGet(m_rota.x, m_rota.y, m_rota.z));
